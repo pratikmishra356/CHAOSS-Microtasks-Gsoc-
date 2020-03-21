@@ -7,7 +7,7 @@ time_series = {'closed-issues-count':['closed-issues-count','date'],
                'new-contributors':['date','new_contributors'],
                'reviews':['date','pull_requests']}
 
-Id_value = {'issue-backlog':['issue_id','duration','created_at'],
+id_value = {'issue-backlog':['issue_id','duration','created_at'],
            'issue-participants':['issue_id','created_at','participants'],
            'review-duration':['"pull_request_id','created_at','duration'],
            'contributors':['user_id','commits','issues','commit_comments',
