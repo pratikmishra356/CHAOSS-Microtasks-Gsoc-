@@ -17,7 +17,7 @@ text = {'message':['msg_id','cntrb_id','msg_text']} #currently there is no metri
 
 
 df_time_series = pd.DataFrame(index=index)
-for endpoint in self.time_series.items():
+for endpoint in self.time_series.keys():
             
     url = base_url + endpoint
     logging.info("Hitting endpoint: " + url + "\n")
@@ -34,7 +34,7 @@ for endpoint in self.time_series.items():
     
     
 df_id = pd.DataFrame(index=index)
-for endpoint in self.time_series.items():
+for endpoint in self.time_series.keys():
             
     url = base_url + endpoint
     logging.info("Hitting endpoint: " + url + "\n")
@@ -49,7 +49,7 @@ for endpoint in self.time_series.items():
     
    
 df_msg = pd.DataFrame(index=index)
-for endpoint in self.time_series.items():
+for endpoint in self.time_series.keys():
             
     url = base_url + endpoint
     logging.info("Hitting endpoint: " + url + "\n")
